@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <!-- aos -->
+
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+      
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
       rel="stylesheet"
@@ -255,12 +261,19 @@
         class="justify-center "
         style="font-family: Google Sans, sans-serif"
       >
-      <div class="text-center p-2" >
+      <div class="text-center p-2" data-aos="fade-up">
         <b>Save the date!</b>
       
         <p>February 7, 2027</p>
       </div>
-        <div id="timer" class="flex flex-row justify-center md:gap-8 ">
+        <div 
+        data-aos="fade-up"
+         data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+
+     id="timer" class="flex flex-row justify-center md:gap-8 ">
             <div
             class="time-segment flex flex-col items-center rounded-2xl min-w-[80px] md:min-w-[100px]"
           >
@@ -315,12 +328,13 @@
             >
           </div>
         </div>
-      </div>
+    
+      
     </section>
     
 
     <section
-      class="absolute z-1 w-full max-w-2xl mt-12 h-full bg-[#d1cfc9] font-family: Edu NSW ACT Cursive, cursive;"
+      class="absolute z-1 w-full max-w-2xl mt-12 pb-90 bg-[#d1cfc9] font-family: Edu NSW ACT Cursive, cursive;"
     >
       <!-- <div class="text-center">
         <h1>OUR LOVE STORY</h1>
@@ -329,21 +343,41 @@
       <div class="p-5 border-radius">
         <div class="">
           <b
+          data-aos="fade-left"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
             class="absolute z-[-1] extrabold text-8xl mt-12 ml-2 text-[#1c2e4a]"
             style="font-family: Google Sans, sans-serif"
             >OUR</b
           >
           <b
+          data-aos="fade-right"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
             class="absolute z-1 extrabold text-7xl mt-44 ml-36 text-[#1b263b] drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)]"
             style="font-family: Google Sans, sans-serif"
             >LOVE</b
           >
           <b
+          data-aos="fade-up"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
             class="absolute z-1 extrabold text-8xl mt-74 ml-2 text-[#1b263b] drop-shadow-[0_2px_2px_rgba(0,0,0,0.6)]"
             style="font-family: Google Sans, sans-serif"
             >STORY</b
           >
           <img
+          data-aos="fade-down"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
             src="m1nobg.png"
             class="relative drop-shadow-[0_35px_35px_rgba(0,0,0,0.35)]"
             alt=""
@@ -353,6 +387,9 @@
       </div>
     </section>
 
+
+    <br>
+    <br>
     <!-- <aside class="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-4">
   
   <div class="group flex items-center justify-end gap-3">
@@ -424,4 +461,8 @@
       updateCountdown();
     </script>
   </body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
