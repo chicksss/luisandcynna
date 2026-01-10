@@ -67,33 +67,21 @@
   </head>
   <body class="relative bg-[#d1cfc9]">
     <!-- sidebar menu -->
-    <button
-      data-drawer-target="default-sidebar"
-      data-drawer-toggle="default-sidebar"
-      aria-controls="default-sidebar"
-      type="button"
-      style="width: 50px;"
-      class="absolute z-3 text-heading  mt-90 ml-70 box-border border border-transparent hover:bg-neutral-secondary-medium focus:ring-4 focus:ring-neutral-tertiary font-medium leading-5 rounded-base ms-3 mt-3 text-sm p-2 focus:outline-none inline-flex sm:hidden"
-    >
-      <span class="sr-only">Open sidebar</span>
-      <!-- <svg
-        class="w-6 h-6"
-        aria-hidden="true"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <path
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-width="2"
-          d="M5 7h14M5 12h14M5 17h10"
-        />
-      </svg> -->
-      <img src="ring.jpg " class="absolute rounded-full" alt="" srcset="" />
-    </button>
+  <button
+  data-drawer-target="default-sidebar"
+  data-drawer-toggle="default-sidebar"
+  aria-controls="default-sidebar"
+  type="button"
+  class="fixed z-50 mt-90 ml-70   mt-3  p-2 w-12 h-20 w-20 transition-transform active:scale-95"
+>
+  <div class="relative w-full h-full p-1 bg-white/20 backdrop-blur-md border border-white/30 rounded-full shadow-2xl overflow-hidden">
+    <img 
+      src="ring.jpg" 
+      class="w-full h-full object-cover rounded-full" 
+      alt="Sidebar Toggle" 
+    />
+  </div>
+</button>
 
     <div
       class=""
@@ -164,7 +152,7 @@
                 href="#"
                 class="flex items-center px-3 py-2 rounded-xl transition-all hover:bg-white/30 group"
               >
-                <svg
+                <!-- <svg
                   class="w-5 h-5"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -176,7 +164,7 @@
                     stroke-width="2"
                     d="M4 13h3.439a.991.991 0 0 1 .908.6 3.978 3.978 0 0 0 7.306 0 .99.99 0 0 1 .908-.6H20M4 13v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-6M4 13l2-9h12l2 9M9 7h6m-7 3h8"
                   />
-                </svg>
+                </svg> -->
                 <span class="flex-1 ms-3 whitespace-nowrap">Venue</span>
                 <span
                   class="inline-flex items-center justify-center w-5 h-5 text-xs font-bold bg-red-500/80 rounded-full shadow-lg"
@@ -189,36 +177,98 @@
       </aside>
     </div>
     <section
-      class="absolute inset-x-0 grid justify-center z-10 pt-10"
+      class="relative w-full h-100 grid justify-center z-10 pt-10 mb-10"
       style="
         font-family: Edu NSW ACT Cursive, cursive;
         font-optical-sizing: auto;
       "
     >
-      <div class="-rotate-8 transform text-white p-2 justify-start ml-[-20px]">
-        <b>Will get married</b>
+      <div class=" text-white justify-start ml-8">
+        <b class="text-[#0F1A2B]">Will get married</b>
       </div>
       <div
         style="font-family: Google Sans, sans-serif"
-        class="flex items-center gap-2 text-white text-5xl -rotate-8 transform justify-center"
+        class="flex items-center gap-2  text-[#0F1A2B] text-5xl  justify-center"
       >
         <p>Luis</p>
         <p class="text-lg opacity-80">and</p>
         <p>Chyna</p>
       </div>
+    
+
+      <div>
+        <!-- <img src="m2nobg.png" class=" z-1 w-50  ml-10 drop-shadow-[0_35px_35px_rgba(0,0,0,0.15)]" alt=""> -->
+          <div>
+        <div
+          id="default-carousel"
+          class="relative w-full z-[-1]"
+          data-carousel="slide"
+        >
+          <div class="relative h-66 overflow-hidden rounded-base md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="pn1.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="pn2.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="pn3.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="pn4.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="pn5.png"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      </div>
+        
       <div
-        class="-rotate-8 transform justify-end"
+        class="justify-center "
         style="font-family: Google Sans, sans-serif"
       >
-        <div id="timer" class="flex flex-row justify-end md:gap-8">
-          <div
-            class="time-segment flex flex-col items-end justify-end rounded-2xl md:min-w-[100px]"
+      <div class="text-center p-2" >
+        <b>Save the date!</b>
+      
+        <p>February 7, 2027</p>
+      </div>
+        <div id="timer" class="flex flex-row justify-center md:gap-8 ">
+            <div
+            class="time-segment flex flex-col items-center rounded-2xl min-w-[80px] md:min-w-[100px]"
           >
-            <span id="days" class="text-xs md:text-5xl font-semibold text-white"
+            <span id="days" class="text-xs md:text-5xl font-semibold text-[#0F1A2B]"
               >00</span
             >
             <span
-              class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
+              class="label text-xs md:text-sm text-[#0F1A2B] font-semibold uppercase tracking-tighter"
               >Days</span
             >
           </div>
@@ -228,13 +278,13 @@
           >
             <span
               id="hours"
-              class="text-xs md:text-5xl font-semibold text-white"
+              class="text-xs md:text-5xl font-semibold text-[#0F1A2B]"
               >00</span
             >
-            <!-- <span
-              class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
+            <span
+              class="label text-xs md:text-sm text-[#0F1A2B] font-semibold uppercase tracking-tighter"
               >Hours</span
-            > -->
+            >
           </div>
 
           <div
@@ -242,13 +292,13 @@
           >
             <span
               id="minutes"
-              class="text-xs md:text-5xl font-semibold text-white"
+              class="text-xs md:text-5xl font-semibold text-[#0F1A2B]"
               >00</span
             >
-            <!-- <span
-              class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
+            <span
+              class="label text-xs md:text-sm text-[#0F1A2B] font-semibold uppercase tracking-tighter"
               >Minutes</span
-            > -->
+            >
           </div>
 
           <div
@@ -256,147 +306,18 @@
           >
             <span
               id="seconds"
-              class="text-xs md:text-5xl font-semibold text-white"
+              class="text-xs md:text-5xl font-semibold text-[#0F1A2B]"
               >00</span
             >
-            <!-- <span
-              class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
+            <span
+              class="label text-xs md:text-sm text-[#0F1A2B] font-semibold uppercase tracking-tighter"
               >Seconds</span
-            > -->
+            >
           </div>
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <div
-          id="default-carousel"
-          class="relative w-full z-[-1]"
-          data-carousel="slide"
-        >
-          <div class="relative h-56 overflow-hidden rounded-base md:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="p1.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="p2.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="p3.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <!-- Item 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="p4.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-            <!-- Item 5 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-              <img
-                src="p5.jpg"
-                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                alt="..."
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          style="
-            /* From https://css.glass */
-            backdrop-filter: blur(4px) saturate(200%);
-            -webkit-backdrop-filter: blur(4px) saturate(200%);
-            background-color: rgba(13, 19, 31, 0.473);
-            border: 1px solid rgba(255, 255, 255, 0.125);
-          "
-          class="absolute inset-0 container h-60 shadow-xl p-10 md:p-16 text-center border border-rose-100"
-        >
-          <br />
-          <br />
-
-          <!-- <p class="text-white font-medium tracking-widest uppercase text-xl">
-            Wedding Countdown
-          </p> -->
-
-          <!-- <div id="timer" class="flex flex-row justify-center gap-1 md:gap-8">
-            <div
-              class="time-segment flex flex-col items-center rounded-2xl p-4 min-w-[80px] md:min-w-[100px]"
-            >
-              <span
-                id="days"
-                class="text-xl md:text-5xl font-semibold text-white"
-                >00</span
-              >
-              <span
-                class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
-                >Days</span
-              >
-            </div>
-
-            <div
-              class="time-segment flex flex-col items-center rounded-2xl p-4 min-w-[80px] md:min-w-[100px]"
-            >
-              <span
-                id="hours"
-                class="text-xl md:text-5xl font-semibold text-white"
-                >00</span
-              >
-              <span
-                class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
-                >Hours</span
-              >
-            </div>
-
-            <div
-              class="time-segment flex flex-col items-center rounded-2xl p-4 min-w-[80px] md:min-w-[100px]"
-            >
-              <span
-                id="minutes"
-                class="text-xl md:text-5xl font-semibold text-white"
-                >00</span
-              >
-              <span
-                class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
-                >Minutes</span
-              >
-            </div>
-
-            <div
-              class="time-segment flex flex-col items-center rounded-2xl p-4 min-w-[80px] md:min-w-[100px]"
-            >
-              <span
-                id="seconds"
-                class="text-xl md:text-5xl font-semibold text-white"
-                >00</span
-              >
-              <span
-                class="label text-xs md:text-sm text-white font-semibold uppercase tracking-tighter"
-                >Seconds</span
-              >
-            </div>
-          </div> -->
-          <!-- <p class="text-white text-sm italic italic">
-            Save the date: February 7, 2027
-          </p> -->
-        </div>
-      </div>
-    </section>
+    
 
     <section
       class="absolute z-1 w-full max-w-2xl mt-12 h-full bg-[#d1cfc9] font-family: Edu NSW ACT Cursive, cursive;"
